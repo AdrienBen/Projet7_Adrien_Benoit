@@ -35,8 +35,6 @@ exports.delete = (req, res, next) => {
 exports.signup = (req, res, next) => {
     let sql = `SELECT * FROM user WHERE email=?`;
     pool.execute(sql, [req.body.email], function (err, result) {
-        console.log(err)
-        console.log(result)
         let user = result[0];
         if (!user) {
             bcrypt.hash(req.body.password, 10)
