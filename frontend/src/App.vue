@@ -12,26 +12,26 @@
           flex-nav
         "
       >
-        <a class="nav-link">
+        <div class="nav-link" >
           <router-link to="/home"
             ><img
               class="homeLinkBig"
               id="nav_groupomania"
-              src="../image/icon-left-font-monochrome-white.svg"
+              src="../image/icon-left-font-monochrome-black.svg"
               alt="lien acceuil"
           /></router-link>
-        </a>
-        <a class="nav-link">
-          <router-link to="/home"
+        </div>
+        <div class="nav-link">
+          <router-link aria-label="lien d'acceuil" to="/home"
             ><img
               class="homeLinkLil"
               src="../image/icon.svg"
               alt="lien acceuil"
           /></router-link>
-        </a>
+        </div>
         <ul class="nav justify-content-center">
           <li class="nav-item" v-if="user">
-            <a class="nav-link">
+            <div class="nav-link">
               <router-link :to="{ name: 'user', params: { userId: user.id } }">
                 <img
                   v-bind:src="user.pp"
@@ -40,10 +40,10 @@
                   @click="refresh"
                 />
               </router-link>
-            </a>
+            </div>
           </li>
           <li class="nav-item" v-if="user">
-            <a class="nav-link">
+            <div class="nav-link">
               <router-link to="/settings">
                 <img
                   src="../image/user-cog-solid.svg"
@@ -51,10 +51,10 @@
                   class="setting"
                 />
               </router-link>
-            </a>
+            </div>
           </li>
           <li class="nav-item" v-if="user">
-            <a class="nav-link">
+            <div class="nav-link">
               <router-link to="/"
                 ><img
                   @click="deconnexion"
@@ -62,7 +62,7 @@
                   alt="logout"
                   class="logout"
               /></router-link>
-            </a>
+            </div>
           </li>
           <li class="nav-item">
             <img
@@ -176,11 +176,12 @@ a:hover {
 
 .setting {
   height: 32px;
-  margin-left: 20px;
+  margin-left: 0px;
+  margin-top: 2px;
 }
 
 .logout {
-  height: 30px;
+  height: 38px;
   width: 80px;
 }
 .navbar {

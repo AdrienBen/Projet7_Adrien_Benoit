@@ -81,6 +81,7 @@
                     class="rounded-circle pp"
                     v-bind:src="post.pp"
                     width="45"
+                    alt="image de profile"
                   />
                 </router-link>
 
@@ -108,6 +109,7 @@
             <img
               class="img-fluid img-responsive imagePost"
               v-bind:src="post.imageUrl"
+              alt="image mise en ligne par l'utilisateur"
             />
           </div>
           <div class="react">
@@ -645,7 +647,7 @@ export default {
 .nomUser {
   font-weight: bold;
   font-size: 19px;
-  color: #091f43;
+  color: #000000;
 }
 .pp {
   object-fit: cover;
@@ -713,5 +715,10 @@ export default {
   .newPost {
     width: 100%;
   }
+}
+
+.btn-primary {
+  background-color: #000000;
+  border-color: #000000;
 }
 </style>

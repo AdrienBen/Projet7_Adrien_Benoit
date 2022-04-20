@@ -396,7 +396,7 @@ h2.active {
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  background-color: #56baed;
+  background-color: #000000;
   border: none;
   color: white;
   padding: 15px 80px;
@@ -588,7 +588,7 @@ input[type="text"]:placeholder {
   bottom: -10px;
   width: 0;
   height: 2px;
-  background-color: #2c658e;
+  background-color: #000000;
   content: "";
   transition: width 0.2s;
 }

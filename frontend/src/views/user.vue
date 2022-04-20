@@ -263,6 +263,7 @@
   padding-top: 50px;
   padding-right: 50px;
 }
+
 .infoUser {
   color: #091f43;
   display: flex;
@@ -297,6 +298,10 @@
   width: 100%;
   margin: 0px;
   padding: 0px;
+}
+
+.text-black-50 {
+color: rgb(0,0,0)!important
 }
 
 .svg-react {
